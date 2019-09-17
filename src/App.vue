@@ -178,11 +178,15 @@
 				                    label-for="inputEventLocation"
 				                    description="">
 
-					        <b-form-select id="inputEventLocation"
-					                      :options="locations"
-					                      required
-					                      v-model="form.location">
-					        </b-form-select>
+									<b-form-input id="inputEventLocation"
+								             type="text"
+								             v-model="form.location"
+														 list="location-type-ahead"
+								             required>
+									</b-form-input>
+									<datalist id="location-type-ahead">
+										<option v-for="loc in locations" v-if="!loc.text">{{ loc }}</option>
+									</datalist>
 						</b-form-group>
 				     </b-col>
 				 </b-row>
@@ -340,7 +344,7 @@ export default {
 		},
 		locations: [
 			{ text: 'Standort wählen', value: null },
-			'Berlin', 'Lübeck', 'Hamburg', 'Leipzig', 'Inning am Ammersee', 'Neßlbach/Winzer', 'Primstal', 'Weingarten', 'Regensburg', 'Bayreuth', 'München', 'Essen', 'Frankfurt am Main', 'Amsterdam'
+			'Berlin', 'Lübeck', 'Hamburg', 'Leipzig', 'Inning am Ammersee', 'Neßlbach/Winzer', 'Primstal', 'Weingarten', 'Regensburg', 'Bayreuth', 'München', 'Essen', 'Frankfurt am Main', 'Amsterdam', 'Stuttgart',
 		],
 		brands: [
 			{ text: 'Unternehmen wählen', value: null },
