@@ -20,7 +20,7 @@
     "bootstrap4-datetimepicker": "^5.2.3",
     "font-awesome": "^4.7.0",
     "install": "^0.12.1",
-    "npm": "^6.2.0",
+    "npm": "^6.13.4",
     "vue-bootstrap-datetimepicker": "^4.1.4",
     "vue-linkify": "^1.0.1",
     "vue-markdown": "^2.2.4",
