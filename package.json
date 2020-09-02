@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap-vue": "^2.0.0-rc.11",
+    "bootstrap-vue": "^2.0.0-rc.12",
     "bootstrap4-datetimepicker": "^5.2.3",
     "font-awesome": "^4.7.0",
     "install": "^0.12.1",
